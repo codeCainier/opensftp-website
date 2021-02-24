@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+}
+html {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    font-size: 12px;
+}
+html,body {
+    height: 100%;
+}
+body {
+    background: url('../svg/index/background.svg') no-repeat;
+    background-size: contain;
+}
+.banner {
+    padding: 100px;
+}
+.disable-copy {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.app-opensftp {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 480px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .3s;
+}
+.app-opensftp.light {
+    background: rgba(255, 255, 255, .7);
+}
+.app-opensftp.dark {
+    background: rgba(29,29,29, .7);
+}
+.app-opensftp .container {
+    width: 300px
+}
+.app-opensftp svg {
+    height: 180px
+}
+.app-opensftp svg .route-1,
+.app-opensftp svg .route-2,
+.app-opensftp svg .route-3 {
+    animation: mymove 3s infinite linear
+}
+@keyframes mymove {
+    0% {
+        transform: translateY(0px)
+    }
+    25% {
+        transform: translateY(2px)
+    }
+    50% {
+        transform: translateY(0px)
+    }
+    75% {
+        transform: translateY(-2px)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+}

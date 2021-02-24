@@ -14,7 +14,6 @@ app
     .use(static('./'))
     .use(template('views', {
         noCache: !production,
-        watch  : !production
     }))
     .use(bodyparser)
     .use(cors)
